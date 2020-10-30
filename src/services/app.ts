@@ -1,7 +1,7 @@
-import { Empresa } from './../models/empresa.model';
 import express from 'express'
-import { getRepository } from 'typeorm'
 import { conectarBD } from './database'
+import empresaRouter from '../modules/empresa/empresa.router';
+
 
 
 const app = express()
