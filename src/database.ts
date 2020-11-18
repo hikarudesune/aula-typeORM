@@ -1,7 +1,9 @@
-import { Empresa } from './../models/empresa.model';
+import { Equipe } from './models/equipe.model';
+import { Assessor } from './models/assessor.model';
+import { Empresa } from './models/empresa.model';
 import { createConnection } from 'typeorm'
 
-const tabelas = [Empresa]
+const tabelas = [Empresa,Assessor,Equipe]
 
 export const conectarBD = async () => {
     await createConnection({
